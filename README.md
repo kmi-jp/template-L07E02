@@ -35,7 +35,7 @@ assert salaries["user 2"] == 300000
 ## Třída `DataFrame`
 * `DataFrame.__iter__(self)` - metoda pro podporu iterování, musí vracet generátor. Generátor iteruje přes klíče (stejně jako v případě slovníku)
 * `DataFrame.items(self)` - metoda pro podporu iterování přes dvojice `(key, value)`, musí vracet iterator (`zip`). Funguje totožně jako `.items()` u slovníku
-* `DataFrame.index` - vlastnost, která vrací index první instance `Series` ve `DataFrame.values`
+* `DataFrame.index` - vlastnost, která vrací index první instance `Series` ve `DataFrame.values` (tedy index odpovídající řádkům v `DataFrame`)
 
 ```python
 from data.series import Series
