@@ -17,6 +17,7 @@ assert [label for label in users] == ["user 1", "user 2", "user 3", "user 4"]
 
 ## Třída `Series`
 * `Series.__iter__(self)` - metoda pro podporu iterování, musí vracet generátor
+* `Series.items(self)` - metoda pro podporu iterování přes dvojice `(key, value)`, musí vracet iterator (`zip`). Funguje totožně jako `.items()` u slovníku (priklad u `DataFrame` níže, pro `Series` funguje obdobně)
 * `Series.__getitem__(self, key)` - podpora operátoru `[]`, funkcionalita jako u slovníku, pokud `key` neexistuje, vyvolá `KeyError`. Upravte metodu `Series.get(self, key)`, aby používala nově implementovaný operátor `[]`
 
 ```python
