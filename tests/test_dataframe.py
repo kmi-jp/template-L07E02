@@ -7,7 +7,7 @@ from data.series import Series
 from data.dataframe import DataFrame
 
 
-input_text=""",names,salary,cash flow
+input_text = """,names,salary,cash flow
 user 1,Lukas Novak,20000,-100
 user 2,Petr Pavel,300000,10000
 user 3,Pavel Petr,20000,-2000
@@ -97,13 +97,7 @@ def test_empty_columns():
 
 @pytest.mark.parametrize(
     "function",
-    [
-        DataFrame,
-        DataFrame.from_csv,
-        DataFrame.get,
-        DataFrame.shape,
-        DataFrame.items
-    ],
+    [DataFrame, DataFrame.from_csv, DataFrame.get, DataFrame.shape, DataFrame.items],
 )
 def test_docstrings(function):
     assert function.__doc__ is not None

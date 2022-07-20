@@ -58,3 +58,10 @@ assert [pair for pair in data.items()] == list(zip(["names", "salary", "cash flo
 
 assert data.index == data.values[0].index
 ```
+
+## Lokální testování
+Funkčnost řešení ověříte následujícím příkazem:
+
+```bash
+pytest tests.py
+```
