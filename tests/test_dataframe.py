@@ -60,3 +60,11 @@ def test_index(names, salaries, cash_flow, columns):
     data = DataFrame([names, salaries, cash_flow], columns=columns)
 
     assert data.index == names.index
+
+
+@pytest.mark.parametrize(
+    "function",
+    [DataFrame, DataFrame.from_csv, DataFrame.get, DataFrame.shape. DataFrame.index],
+)
+def test_docstrings(function):
+    assert function.__doc__ is not None
