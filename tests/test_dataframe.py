@@ -53,7 +53,7 @@ def test_items(names, salaries, cash_flow, columns):
         test_values.append(value)
 
     assert test_columns == columns.labels
-    assert test_values == [names.values, salaries.values, cash_flow.values]
+    assert test_values == [names, salaries, cash_flow]
 
 
 def test_index(names, salaries, cash_flow, columns):
