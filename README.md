@@ -1,7 +1,7 @@
 # L07E02: Data 3
 Balíček `data` z minulého semináře rozšiřte o následující funkcionalitu. Ve zdrojovém kódu urdžujte pořádek a metody seskupujte dle významu.
 
-Kdekoli je ve stávájícím kódu možné `for` cyklus přepsat pomoci comprehension, to udělejte.
+Kdekoli je ve stávájícím kódu možné a vhodné `for` cyklus přepsat pomoci comprehension, to udělejte.
 
 ## Třída `Index`
 * `Index.__iter__(self)` - metoda pro podporu iterování, musí vracet generátor
